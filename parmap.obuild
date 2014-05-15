@@ -1,0 +1,14 @@
+Name:       parmap
+Version:    1.0-rc3
+Authors:    Marco Danelutto and Roberto Di Cosmo
+License:    GPL
+Synopsis:   library to exploit multicore architectures (parallel programming)
+obuild-ver: 1
+
+library parmap
+  oflags:       -annot -w +27 -warn-error +8
+  cflags:       -g -O2 -fPIC -Wall -pedantic -Werror -Wno-long-long
+  modules:      Parmap
+  src-dir:      .
+  c-sources:    setcore_stubs.c, bytearray_stubs.c
+  BuildDepends: unix
