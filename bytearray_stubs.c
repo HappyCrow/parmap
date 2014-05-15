@@ -3,8 +3,8 @@
 
 #include <string.h>
 
-#include "caml/intext.h"
-#include "caml/bigarray.h"
+#include <caml/intext.h>
+#include <caml/bigarray.h>
 
 #define Array_data(a, i) (((char *) a->data) + Long_val(i))
 #define Floatarray_data(a, i) (((char *) a->data) + 8 * Long_val(i))
